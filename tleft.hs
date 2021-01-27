@@ -5,9 +5,6 @@ main = do
     args <- getArgs 
     putStrLn (timeLeftFromArgs (head args) (args !! 1))
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
-
 timeLeftFromArgs :: [Char] -> [Char] -> [Char]
 timeLeftFromArgs arg1 arg2 = timeLeftMessage (fromArgToTimeTuple arg1) (fromArgToTimeTuple arg2)
 
