@@ -21,7 +21,7 @@ timeLeftMessage :: (Int, Int) -> (Int, Int) -> [Char]
 timeLeftMessage time1 time2 = composeTimeLeftString (timeLeft time1 time2)
 
 composeTimeLeftString :: (Int, Int) -> [Char]
-composeTimeLeftString time = "Time left: " ++ show (fst time) ++ ":" ++ show (snd time) ++ " hours"
+composeTimeLeftString time = "Time left -> " ++ show (fst time) ++ ":" ++ show (snd time) ++ " hours"
 
 timeLeft :: (Int, Int) -> (Int, Int) -> (Int, Int)
 timeLeft time1 time2 = (hours, subMinutes (snd time1) (snd time2)) where 
