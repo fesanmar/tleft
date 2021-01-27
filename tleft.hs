@@ -1,7 +1,4 @@
 import System.Environment
--- module Lib
---     ( someFunc
---     ) where
     
 main :: IO ()
 main = do
