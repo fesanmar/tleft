@@ -5,6 +5,7 @@ Copyright   : (c) Felipe-Cruz Martínez-Acalá, 2021
 License     : MIT license
 Maintainer  : fesanmar@gmail.com
 Stability   : experimental
+Version     : 1.0.1
 -}
 
 import System.Environment
@@ -25,8 +26,9 @@ argParser (x:[])
 argParser (x:y:[])
     | isValidTimeRange x y = putStrLn (timeLeftFromArgs x y)
     | areTimestamps [x, y] = putStrLn ("Error: first arg <" ++ x ++ ">" ++ " must be greater or equal to the second <" ++ y ++ ">\n" ++ usage)
-argParser args@(x:y:zs) = putStrLn ("Error: This program expects only two args but " ++ (show (length args)) ++ " where passsed.\n" ++ usage)
-
+    | otherwise = putStrLn ("Error: Expecting two timestamps. Please check usage:\n" ++ usage)
+argParser args@(x:y:zs) = putStrLn ("Error: Expecting only two args but " ++ (show (length args)) ++ " where passsed.\n" ++ usage)
+ 
 isValidTimeRange :: String -> String -> Bool
 isValidTimeRange a b = areTimestamps [a, b] && a `isBiggerThanOrEqualTo` b
 
