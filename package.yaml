@@ -1,7 +1,7 @@
 name:                tleft
-version:             0.1.0.0
-github:              "githubuser/tleft"
-license:             BSD3
+version:             2.0.0
+github:              "fesanmar/tleft"
+license:             MIT License
 author:              "Felipe Santa-Cruz"
 maintainer:          "fesanmar@gmail.com"
 copyright:           "2021 Felipe Santa-Cruz"
@@ -11,8 +11,8 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            Super naive CLI aplication that subtracts timestamps with the format hh:mm.
+category:            CLI
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
