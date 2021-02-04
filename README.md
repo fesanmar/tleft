@@ -1,6 +1,6 @@
 # tleft
 
-Super naive CLI aplication that subtracts two timestamps with the format `hh:mm`.
+Super naive CLI aplication that subtracts timestamps with the format `hh:mm`.
 
 ## Usage
 
