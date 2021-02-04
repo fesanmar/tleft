@@ -1,0 +1,63 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 0e057cfe03cbab2594b67103a34555bd6a34f1bfffbd42e81034515c66902bf1
+
+name:           tleft
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/tleft#readme>
+homepage:       https://github.com/githubuser/tleft#readme
+bug-reports:    https://github.com/githubuser/tleft/issues
+author:         Felipe Santa-Cruz
+maintainer:     fesanmar@gmail.com
+copyright:      2021 Felipe Santa-Cruz
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/tleft
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_tleft
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable tleft-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_tleft
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , tleft
+  default-language: Haskell2010
+
+test-suite tleft-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_tleft
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , hspec
+    , tleft
+  default-language: Haskell2010

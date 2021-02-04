@@ -4,7 +4,7 @@ Super naive CLI aplication that subtracts two timestamps with the format `hh:mm`
 
 ## Usage
 
-Compile it with `ghc tleft.hs` and run `tleft <timestamp1> <timestamp2>`. A message with the format `Time left: <hh>:<mm> hours` will be displayed on the screen.
+Compile it with `stack build` and run `tleft time1 time2...`. A message with the format `Time left -> <hh>:<mm> hours` will be displayed on the screen.
 
 ## Example
 
