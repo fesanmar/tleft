@@ -4,11 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fd772d06ec29c5be52a5374acdc3ca72f2aac7437e7e7c08d8f5cd288f5af7f4
+-- hash: 34ae18c3a59f64c58871bff5bafe56df82ee3faae228ce3c4ca4bb0adcd0b3a2
 
 name:           tleft
 version:        2.0.0
+synopsis:       Super naive CLI aplication that subtracts timestamps with the format hh:mm.
 description:    Please see the README on GitHub at <https://github.com/githubuser/tleft#readme>
+category:       CLI
 homepage:       https://github.com/fesanmar/tleft#readme
 bug-reports:    https://github.com/fesanmar/tleft/issues
 author:         Felipe Santa-Cruz
@@ -27,7 +29,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Tleft
   other-modules:
       Paths_tleft
   hs-source-dirs:

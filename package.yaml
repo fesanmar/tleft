@@ -1,7 +1,7 @@
 name:                tleft
 version:             2.0.0
 github:              "fesanmar/tleft"
-license:             MIT License
+license:             MIT
 author:              "Felipe Santa-Cruz"
 maintainer:          "fesanmar@gmail.com"
 copyright:           "2021 Felipe Santa-Cruz"

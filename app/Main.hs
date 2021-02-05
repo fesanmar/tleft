@@ -2,7 +2,7 @@ module Main where
 
 import System.Environment ( getArgs )
 import Data.Maybe ( fromJust, isJust )
-import Lib (tleft)
+import Tleft (tleft)
 
 main :: IO ()
 main = do
