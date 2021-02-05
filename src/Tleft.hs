@@ -7,7 +7,7 @@ import Data.Char ( isNumber )
 
 tleft :: [String] -> Maybe (Int, Int)
 tleft args
-    | areTimestamps args = Just (foldl1 timeLeft (map fromArgToTimeTuple args))
+    | areTimestamps args = Just . foldl1 timeLeft $ map fromArgToTimeTuple args
     | otherwise = Nothing 
 
 areTimestamps :: [String] -> Bool
